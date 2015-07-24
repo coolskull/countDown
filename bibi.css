@@ -1,0 +1,103 @@
+
+
+/*-----------------find.css------------------*/
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(-180deg) translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: rotate(180deg) translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes reverse-spin {
+    0% {
+        -webkit-transform: rotate(180deg) translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: rotate(-180deg) translate3d(0, 0, 0);
+    }
+}
+@keyframes spin {
+    0% {
+        transform: rotate(-180deg) translate3d(0, 0, 0);
+    }
+    100% {
+        transform: rotate(180deg) translate3d(0, 0, 0);
+    }
+}
+
+@keyframes reverse-spin {
+    0% {
+        transform: rotate(180deg) translate3d(0, 0, 0);
+    }
+    100% {
+        transform: rotate(-180deg) translate3d(0, 0, 0);
+    }
+}
+
+
+/*--------------主要模块--------------*/
+.find_block{
+    position:relative;
+    margin:100px auto;
+    width:210px;
+}
+
+
+.time_container {
+    width: 210px;
+    height: 210px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.time_container .time {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #35B544;
+    position: absolute;
+    top: 185px;
+    left: 85px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    -webkit-transform-origin: 20px -80px;
+    -moz-transform-origin: 20px -80px;
+    -ms-transform-origin: 20px -80px;
+    -o-transform-origin: 20px -80px;
+    transform-origin: 20px -80px;
+}
+
+.time_container .time div {
+    position: absolute;
+    top: 12px;
+    left: 4px;
+    color: #fff;
+    font-size: 12px;
+    -webkit-transform: rotate(-180deg) translate3d(0, 0, 0);
+    -moz-transform:rotate(-180deg) translate3d(0, 0, 0) ;
+    -ms-transform:rotate(-180deg) translate3d(0, 0, 0) ;
+    -o-transform:rotate(-180deg) translate3d(0, 0, 0) ;
+    transform:rotate(-180deg) translate3d(0, 0, 0) ;
+
+}
+
+
+.loading .time{
+    -webkit-animation: spin 6s 1 linear;
+    -moz-animation: spin 6s 1 linear;
+    -o-animation: spin 6s 1 linear;
+    animation:spin 6s 1 linear;
+}
+.loading .time div {
+    -webkit-animation: reverse-spin 6s 1 linear;
+    -moz-animation: reverse-spin 6s 1 linear;
+    -o-animation: reverse-spin 6s 1 linear;
+    animation:reverse-spin 6s 1 linear;
+}
+
