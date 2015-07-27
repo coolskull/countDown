@@ -3,9 +3,9 @@
 
     var startTime = 0;
     //下面这几个参数是为画加载弧线准备的
-    var br = 100;//半径
-    var X = 105;//圆心x
-    var Y = 105;//圆心Y
+    var br = 100;// 半径
+    var X = 105;// 圆心x
+    var Y = 105;// 圆心Y
     var sa = -180 / 360 * Math.PI;//设置弧线的起点
     var direction = false;//set false for anticlockwise
 

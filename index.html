@@ -10,17 +10,23 @@
 </head>
 <body>
 <div class="find_block">
-    <canvas id="sampleCanvas" width="210" height="210">
-        <p>Your browser doesn't support canvas.</p>
-    </canvas>
-    <div class="time_container loading">
-        <div class="time">
-            <div id="timerSecond">01:00</div>
-        </div>
-    </div>
-    <button id="btn_retry">重试</button>
+    <div id="sample"></div>
+    <!--<canvas id="sampleCanvas" width="210" height="210">-->
+        <!--<p>Your browser doesn't support canvas.</p>-->
+    <!--</canvas>-->
+    <!--<div class="time_container loading">-->
+        <!--<div class="time">-->
+            <!--<div id="timerSecond">01:00</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<button id="btn_retry">重试</button>-->
 </div>
 <script src="jquery-2.1.1.min.js"></script>
-<script src="coutdown.js"></script>
+<script src="coutdown2.js"></script>
+<script>
+    $(function(){
+        $("#sample").countDown();
+    });
+</script>
 </body>
 </html>
